@@ -35,17 +35,12 @@ public class Person {
         System.out.println("Age: " + person.getAge());
 
         // Check voting eligibility
-        if (person.isEligibleToVote()) {
+        if (person.isEligibleToVote() && age>0) {
             System.out.println(person.getName() + " is eligible to vote.");
         } else {
             System.out.println(person.getName() + " is not eligible to vote.");
         }
 
-        // Modify person's age using setter
-        person.setAge(16);
-
-        // Display updated details
-        System.out.println("Updated Age: " + person.getAge());
 
         // Check voting eligibility again
         if (person.isEligibleToVote()) {
